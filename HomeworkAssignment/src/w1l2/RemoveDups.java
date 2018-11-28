@@ -4,7 +4,7 @@ public class RemoveDups {
 	
 	public static void main(String[] args) {
 		String[] inputs = {"horse", "dog", "cat", "horse","dog"} ;
-		String[] outputs =new String[inputs.length] ;
+		String[] outputs;
 		String[] temp =new String[inputs.length] ;
 		int k=0;
 		
@@ -15,8 +15,10 @@ public class RemoveDups {
 			
 			do {	
 				if(temp[j]!=null)
-					if(inputs[i]==temp[j])
+					if(inputs[i]==temp[j]) {
 						cont++;
+						break;	
+					}
 				j++;
 				
 			}while(j<=i);
@@ -27,7 +29,7 @@ public class RemoveDups {
 			}
 		}
 
-		
+		outputs =new String[k];
 		for (int i = 0; i < k; i++) {
 			outputs[i]=temp[i];
 			System.out.println(outputs[i]);
