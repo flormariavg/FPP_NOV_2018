@@ -6,30 +6,31 @@ public class Prog1 {
 	
 	public static void main(String[] args) {
 		/*
-		 * 1. get a random number x in the range 1 .. 9 and compute π pow x
+		 * Problem 1
 		 */
 		
 		int x = RandomNumbers.getRandomInt(1,9);
 		double sol1 = Math.pow(Math.PI, x);	
 		
-		System.out.println("Output Problem 1.1 = "+sol1);
+		System.out.println("Solution Problem 1 = "+sol1);
 		
 		/*
-		 * Output Problem 1.1 = 3.141592653589793
+		 * Solution Problem 1 = 9488.53101607057
 		 */
 		
 		/*
-		 * 2. get a random number y in the range 3 .. 14 and compute y pow π
+		 * Problem 2
 		 */
 		
 		int y = RandomNumbers.getRandomInt(3,14);
 		double sol2 = Math.pow(y, Math.PI);
 		
-		System.out.println("Output Problem 1.2 = "+sol2);
+		System.out.println("Solution Problem 2 = "+sol2);
 		
 		/*
-		 * Output Problem 1.2 = 3159.04819858571
+		 * Solution Problem 2 = 2456.675951201724
 		 */
+		
 	}
 
 }
