@@ -22,10 +22,18 @@ public class Main {
 		retirementAccount.makeDeposit(50);
 		retirementAccount.makeWithdrawal(150);
 		
+		System.out.println("Accounts for "+ e1.getName()+" : ");
+		
 		System.out.println(checkingAccount);
 		System.out.println(savingsAccount);
 		System.out.println(retirementAccount);
+		
+		/*
+		 * Accounts for Jhon Alvarez : 
+		 * type = CHECKING, balance = 750.0
+		 * type = SAVINGS, balance = 400.0
+		 * type = RETIREMENT, balance = 200.0
+		 */
 	}
-	
 	
 }
