@@ -1,12 +1,11 @@
 package w1l5.problem3;
 
-public class FaceMaker implements Figure{
+public class Vertical implements Figure {
 
 	@Override
 	public void getFigure() {
-		System.out.print(":)");	
+		System.out.print("||");
 		
 	}
-	
 
 }
