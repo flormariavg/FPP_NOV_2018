@@ -8,12 +8,10 @@ package w3l9.problem2;
 public class StackDoubleLinkedList implements Stack {
 	
 	Node header;
-	Node top;
 	
 	public StackDoubleLinkedList() {
 		// TODO Auto-generated constructor stub
 		header=null;
-		top=null;
 	}
 	
 
