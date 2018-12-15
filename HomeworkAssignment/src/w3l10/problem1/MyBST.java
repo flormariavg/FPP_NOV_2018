@@ -69,7 +69,9 @@ public class MyBST {
 		// implement
 		//[VLR]
 		if(t==null) return;
-		System.out.print(t.element+", ");
+		if(t!=root)
+			System.out.print(", ");
+		System.out.print(t.element);
 		preOrder(t.left);
 		preOrder(t.right);
 		
@@ -109,7 +111,10 @@ public class MyBST {
 		
 		postOrder(t.left);
 		postOrder(t.right);
-		System.out.print(t.element+", ");
+		
+		System.out.print(t.element);
+		if(t!=root)
+			System.out.print(", ");
 		
 	}
 	
@@ -212,13 +217,13 @@ public class MyBST {
 		
 		MyBST mybst = new MyBST();
 		System.out.println("Is empty? "+mybst.isEmpty());
-		int [] a = {15, 12, 9, 56, 1, 16, 19, 22, 3, 100, 2, 25};
+		int [] a = {45,25,65,75,15,30,55,80,10,20,50,60};
+		//int [] a = {15, 12, 9, 56, 1, 16, 19, 22, 3, 100, 2, 25};
 	
 		for (int j = 0; j < a.length; j++ ) {
 			mybst.insert(a[j]);
 					
 		}
-		mybst.insert(12);
 		mybst.printTree();
 		
 		mybst.preOrder();
@@ -226,7 +231,7 @@ public class MyBST {
 		mybst.postOrder();
 		
 		System.out.println("\n\nc: The tree contain the element 26: "+mybst.contains(26));
-		System.out.println("\n   The tree contain the element 100: "+mybst.contains(100));
+		System.out.println("\n   The tree contain the element 60: "+mybst.contains(60));
 		
 		System.out.println("\n\nd: Root: "+mybst.getRoot());
 		
@@ -264,36 +269,35 @@ public class MyBST {
 	/*
 	 * OUTPUT:
 	 * 
-	 * Is empty? true
-		The element exist in the tree
-		1,2,3,9,12,15,16,19,22,25,56,100,
+	 *Is empty? true
+		10,15,20,25,30,45,50,55,60,65,75,80,
 		
 		a: Pre Order
-		15, 12, 9, 1, 3, 2, 56, 16, 19, 22, 25, 100, 
+		45, 25, 15, 10, 20, 30, 65, 55, 50, 60, 75, 80
 		
 		In Order
-		1, 2, 3, 9, 12, 15, 16, 19, 22, 25, 56, 100, 
+		10, 15, 20, 25, 30, 45, 50, 55, 60, 65, 75, 80, 
 		
 		b: Post Order
-		2, 3, 1, 9, 12, 25, 22, 19, 16, 100, 56, 15, 
+		10, 20, 15, 30, 25, 50, 60, 55, 80, 75, 65, 45
 		
 		c: The tree contain the element 26: false
 		
-		   The tree contain the element 100: true
+		   The tree contain the element 60: true
 		
 		
-		d: Root: 15
+		d: Root: 45
 		
 		
-		e: Leaf nodes: 3
+		e: Leaf nodes: 6
 		
 		f: Size:12
 		
 		g: Is empty? false
 		
-		h: The min element in the tree: 1
+		h: The min element in the tree: 10
 		
-		i: The max element in the tree: 100
+		i: The max element in the tree: 80
 	 */
 
 }
