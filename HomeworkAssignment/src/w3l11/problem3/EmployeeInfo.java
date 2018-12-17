@@ -36,6 +36,12 @@ public class EmployeeInfo {
 		System.out.println("Is answer correct? " + dupsCorrectlyRemoved);
 	}
 	
+	/*
+	 * OUTPUT
+	 * 
+	 * EmployeeComparator.java
+	 */
+	
 	
 
 	 
